@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <exception>
-//#include "Pupil.h"
+#include "Pupil.h"
 
 #define MAX_INT 65535
 #define BYTE char
@@ -12,7 +12,7 @@ using namespace std;
 enum class Elective : BYTE {
     M, E, PH, CH, ART, PHIL, MAX_ELECTIVE
 };
-
+/*
 class Pupil
 {
 private:
@@ -37,12 +37,13 @@ private:
     string id;
     vector<string> list;
 public:
-    Form(/* args */);
+    Form();
 };
+*/
 
 int main()
 {
-    try
+    /*try
     {
         Pupil p("Feri", (Elective)6);
     }
@@ -50,7 +51,7 @@ int main()
     {
         std::cerr << e.what() << '\n';
         return -1;
-    }
+    }*/
     cout << "Hello world!" << MAX_INT << endl;
     return 0;
 }
