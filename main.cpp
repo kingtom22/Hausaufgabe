@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Pupil.h"
+#include "Pupil.hpp"
 
 #define MAX_INT 65535
 
@@ -12,13 +12,13 @@ int main()
 {
     try
     {
-        Pupil p("Feri", (Elective)6);
+        Pupil p("Feri", Elective::CH);
     }
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
         return -1;
     }
-    cout << "Hello world!" << MAX_INT << endl;
+    cout << "Hello world! " << MAX_INT << endl;
     return 0;
 }
