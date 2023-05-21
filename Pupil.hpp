@@ -20,6 +20,9 @@ private:
     Elective elective2;
 public:
     Pupil(string Name, Elective Wahlfach_1, Elective Wahlfach_2 = Elective::PHIL, int Punktanzahl = 20);
+    int chose(Elective choice) const;
+    int get_points() const;
+    int change_points(int amount);
 };
 
 #endif /* PUPUL_H_INCLUDED */
